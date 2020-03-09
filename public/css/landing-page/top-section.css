@@ -1,0 +1,355 @@
+/* BEGIN GLOBAL STYLING */
+#top{
+    background-color:#ffffff;
+  }
+  #top .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 0;
+  align-items: center;
+  }
+  /* END GLOBAL STYLING */
+  /* BEGIN LEFT-SIDE CONTAINER */
+  #top .info{
+  padding: 15px;
+  position: relative;
+
+  bottom: 270px;
+  }
+  #top .info .blue-square{
+  border: 20px solid #dbf1ff;
+  width: 500px;
+  height: 450px;
+  position: absolute;
+  z-index: 0;
+  top: -40%;
+  left: -50%; 
+  }
+  #top .info h1{
+  position: relative;
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #0000ff;
+  margin-bottom: 1rem;
+  z-index: 1;
+  }
+  #top .container .info p{
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    z-index: 1;
+    color: #0000ff;
+    font-size:1.5rem;
+  }
+  #top .container .info a{
+    position: relative;
+    font-size: .9rem;
+    color: #16171b;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
+    z-index: 1;
+    letter-spacing: 2px;  
+    margin-bottom: 2rem;
+  }
+  #top .container .info a:hover{
+    position: relative;
+    font-size: 1.0rem;
+    font-style: italic;
+    /* color: #16171b; */
+    color: #0000ff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid blue;
+    z-index: 1;
+    letter-spacing: 2px;  
+    margin-bottom: 2rem;
+    cursor: crosshair;
+  }
+  #top .container .info h3{
+  margin-top: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: 95%;
+  left: 2%;
+  color:black;
+  font-size:0.9rem;
+  font-weight:500;
+  text-transform:none;
+  line-height: 1.1;
+  }
+  /* END LEFT-SIDE CONTAINER */
+  /* BEGIN RIGHT-SIDE CONTAINER */
+  #top .container .cover-letter-content{
+    margin-top:3rem;
+    padding:20px 20px 10px 20px;
+    background-color: #dbf1ff;
+    /* color: orange; */
+    /* font-size:5.0rem; */
+    font-weight:300;
+    text-transform:none;
+    line-height: 1.0;
+    border:1px solid #0000ff;
+  }
+  #top .container .cover-letter-content h2{
+    font-size:1.8rem; 
+    margin-top:1rem; 
+    margin-bottom: 1rem;
+    font-weight:100;
+    letter-spacing:3px; 
+    text-align:center;
+    border:1px solid #0000ff;
+    background-color: #0000ff;
+    color: #ffffff;
+    padding: 5px 0px;
+  }
+  #top .container .cover-letter-content p{
+    padding-bottom: 7px;
+    font-size:1.0rem;
+    font-weight:500;
+    line-height: 1.0;
+    text-align:left; 
+    color: black;
+  }
+  #top .container .cover-letter-content ul li{
+    list-style: square;
+    margin-left:1.5rem;
+    background-color: #dbf1ff;
+    color:black;
+    font-size:1.0rem;
+    font-weight:400;
+    text-transform:none;
+    line-height: 1.0;
+    margin-bottom: 5px;
+  }
+  #top .container .cover-letter-content .para-1{
+    color: #0000ff;
+    font-weight: 500;
+    font-size: 1.0rem;
+  }
+  /* Tablets */
+  @media all and (min-width: 768px) and (max-width: 960px){    
+  #top .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 400 400 400;
+      padding: 20px 20px;
+      align-items: center;
+    }
+    /* END GLOBAL STYLING */
+    /* BEGIN LEFT-SIDE CONTAINER */
+    #top .info{
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    }
+    #top .info .blue-square{
+    border: 20px solid #dbf1ff;
+    width: 600px;
+    height: 340px;
+    position: absolute;
+    z-index: 0;
+    top: -20%;
+    left: -55%;
+    }
+    #top .info h1{
+    position: relative;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #0000ff;
+    margin-bottom: 1rem;
+    z-index: 1;
+    line-height: 1.1;
+    }  
+    #top .container .info p{
+      position: relative;
+      color: #919191;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      z-index: 1;
+      color: #0000ff;
+      font-size:1.5rem;
+    }
+    #top .container .info a{
+      position: relative;
+      font-size: .9rem;
+      color: #16171b;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #000;
+      z-index: 1;
+      letter-spacing: 2px;
+    }
+    #top .container .info h3{
+    margin:0px;
+    padding:0px;
+    position: absolute;
+    z-index: 1;
+    top: 95%;
+    left: 2%;
+    color:#292929;
+    font-size:0.9rem;
+    font-weight:500;
+    text-transform:none;
+    line-height: 1.1;
+    }
+    /* END LEFT-SIDE CONTAINER */
+    /* BEGIN RIGHT-SIDE CONTAINER */  
+    #top .container .cover-letter-content{
+      width: 100%;
+    }
+    #top .container .cover-letter-content h2{
+      font-size:1.7rem; 
+      margin-top:1rem; 
+      margin-bottom: 1rem;
+      font-weight:600;
+      letter-spacing:3px; 
+      text-align:center; 
+      color:blue;
+      font-style: italic;
+    }
+    #top .container .cover-letter-content p{
+      padding-bottom: 10px;
+      font-size:1.0rem;
+      font-weight:500;
+      line-height: 1.0;
+      text-align:left; 
+      color:#292929;
+    }
+    #top .container .cover-letter-content ul li{
+      margin-left:1.5rem;
+      background-color: #dbf1ff;
+      color:#292929;
+      font-size:1.0rem;
+      font-weight:400;
+      text-transform:none;
+      line-height: 1.0;
+    }
+    #top .container .cover-letter-content .para-1{
+      color: #0000ff;
+      font-weight: 500;
+      font-size: 1.0rem;
+    }  
+  }
+  /* Phones */
+  @media only screen and (max-width: 767px){
+  #top .container{
+    width: 100%;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400 400 400 400 400 400;
+    padding: 40px 0;
+    align-items: center;
+    }
+    /* END GLOBAL STYLING */    
+  /* BEGIN LEFT-SIDE CONTAINER */
+  #top .info{
+    padding: 15px;
+    position: relative;
+  
+    bottom: 20px;
+    }
+    #top .info .blue-square{
+    border: 20px solid #dbf1ff;
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    z-index: 0;
+    top: -30%;
+    left: -100%;
+  
+    /* bottom: 200px; */
+    }
+    #top .info h1{
+    position: relative;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #0000ff;
+    margin-bottom: 1rem;
+    z-index: 1;
+
+    line-height: 1.2;
+    }
+    #top .container .info p{
+      position: relative;
+      color: #919191;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      z-index: 1;
+      color: #0000ff;
+      font-size:1.5rem;
+    }
+    #top .container .info a{
+      position: relative;
+      font-size: .9rem;
+      color: #16171b;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #000;
+      z-index: 1;
+      letter-spacing: 2px;
+    
+      margin-bottom: 2rem;
+    }
+    #top .container .info h3{
+    margin-top: 1rem;
+    position: absolute;
+    z-index: 1;
+    top: 95%;
+    left: 2%;
+    color:#292929;
+    font-size:0.9rem;
+    font-weight:500;
+    text-transform:none;
+    line-height: 1.1;
+    }
+    /* END LEFT-SIDE CONTAINER */
+    /* BEGIN RIGHT-SIDE CONTAINER */   
+    #top .container .cover-letter-content{
+      width: 100%;
+      margin-top: 17rem;
+  
+      width: 100%;
+    }
+    #top .container .cover-letter-content h2{
+      border:1px solid #0000ff;
+      border-radius: 5px;
+      background-color: #0000ff;
+      color: #ffffff;
+      padding: 5px 0px;
+    }
+    #top .container .cover-letter-content p{
+      padding-bottom: 10px;
+      font-size:1.0rem;
+      font-weight:500;
+      line-height: 1.0;
+      text-align:left; 
+      color:#292929;
+    }
+    #top .container .cover-letter-content ul li{
+      margin-left:1.5rem;
+      background-color: #dbf1ff;
+      color:#292929;
+      font-size:1.0rem;
+      font-weight:400;
+      text-transform:none;
+      line-height: 1.0;
+    }
+    #top .container .cover-letter-content .para-1{
+      color: #0000ff;
+      font-weight: 500;
+      font-size: 1.0rem;
+    }  
+  }

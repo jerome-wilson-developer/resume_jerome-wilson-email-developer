@@ -1,0 +1,182 @@
+#services{
+    padding: 30px 15px;
+    background-color: #eeeeee;
+    /* background-color: #f9f9f9; */
+    /* background-color: #F8F8F8; */
+    /* background-color: #F5F5F5; */
+    /* background-color: #F0F0F0; */
+    /* background-color: #E8E8E8; */
+    /* background-color: #E0E0E0; */
+}
+#services .title{
+    position: relative;
+    width:100%;
+    height:200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+    margin-top:20px;
+}
+#services .title .circle{
+    background:lightskyblue;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    position:absolute;
+}
+#services .title .sectionTitle{
+    width: 100%;
+    position: relative;
+    z-index:1;
+    color: #0000ff;
+    font-size:2.2rem;
+    font-weight:600;
+    letter-spacing:5px;
+    text-transform:capitalize;
+    color: #0000ff;
+    text-align: center;
+}
+#services .services-container{
+    margin-top:1rem;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 320px;
+    grid-gap:20px;
+    margin-bottom: 2rem;
+}
+#services .services-container .box{
+    background:#F8F8F8;
+    padding:20px;
+    transition:all .4s ease-in-out;
+    cursor: crosshair;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    border-bottom:1px solid #0000ff;
+}
+#services .services-container .box:hover{
+    background-color:#ffffff;
+    /* background: rgba(255,255,255, 1); */    
+    -webkit-box-shadow: 0px 41px 94px 0px rgba(0,102,255,0.8);
+    -moz-box-shadow: 0px 41px 94px 0px rgba(0,102,255,0.8);
+    box-shadow: 0px 41px 94px 0px rgba(0,102,255,0.8);
+}
+#services .services-container .box .fas{
+    font-size:2.5rem;
+    margin-bottom:1rem;
+}
+#services .services-container .box .fab{
+    font-size:3.5rem;
+}
+#services .services-container .box h3{
+    font-size:1.1rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    color:#0000ff;
+}
+#services .services-container .box p{
+    font-size:.9rem;
+    line-height:1.1;
+    letter-spacing: 2px;
+    color:#393939;
+    padding-bottom: 10px;
+}
+#services .services-container .box .foot-notes{
+    color:blue; 
+    text-align:left; 
+    border-top:1px solid #0000ff; 
+    padding-top:10px; 
+    /* padding:10px 20px 50px 20px; */
+
+}
+#services .services-container .box.blue{
+    border:1px solid #0000ff;
+    background-color:white;
+}
+#services .services-container .box.red{ 
+    border:1px solid #0000ff;
+    background-color:white;
+}
+#services .services-container .box.black{
+    border:1px solid #0000ff;
+}
+/* Tablets */
+@media all and (min-width:768px) and (max-width:960px){        
+    #services .services-container{
+        margin-top:1rem;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 600px;
+        /* grid-gap:20px; */
+        margin-bottom: 20px;
+    }
+    #services .services-container .box p{
+        font-size:.9rem;
+        line-height:1.5;
+        letter-spacing: 2px;
+        color:#393939;
+        padding-bottom: 10px;
+    }
+    #services .services-container .box .foot-notes{
+        color:blue; 
+        text-align:left; 
+        border-top:1px solid #0000ff; 
+        padding-top:10px;
+    }
+    #services .services-container .box p{
+        font-size:.9rem;
+        line-height:1.5;
+        letter-spacing: 2px;
+        color:#393939;
+        padding-bottom: 10px;
+    }
+    #services .services-container .box{
+        background-color:#ffffff;
+    }    
+}
+/* Phones */
+@media all and (max-width: 767px){         
+    #services .services-container{
+        margin-top:1rem;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 450px;
+        /* grid-gap:20px; */
+        margin-bottom: 70px;
+    }
+    #services .services-container .box p{
+        font-size:.9rem;
+        line-height:1.5;
+        letter-spacing: 2px;
+        color:#393939;
+        padding-bottom: 10px;
+    }
+    #services .services-container .box .foot-notes{
+        color:blue; 
+        text-align:left; 
+        border-top:1px solid #0000ff; 
+        padding-top:10px;
+    }
+    #services .services-container{
+        margin-top:1rem;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 450px;
+        grid-gap:20px;
+        margin-bottom: 70px;
+    }
+    #services .services-container .box p{
+        font-size:.9rem;
+        line-height:1.5;
+        letter-spacing: 2px;
+        color:#393939;
+        padding-bottom: 10px;
+    }
+    #services .services-container .box .foot-notes{
+        color:blue; 
+        text-align:left; 
+        border-top:1px solid #0000ff; 
+        padding-top:10px;
+    }
+}

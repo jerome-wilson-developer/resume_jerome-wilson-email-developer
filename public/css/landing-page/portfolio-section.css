@@ -1,0 +1,318 @@
+#portfolio-section{
+    background-color: white;
+    padding: 30px 15px;
+    margin: 1rem 0rem;
+}
+#portfolio-section .title{
+    position: relative;
+    width:100%;
+    text-align: left;
+    height:200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+    margin-top:40px;
+}
+#portfolio-section .container .title .square{
+    background:lightskyblue;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    position:absolute;
+}
+#portfolio-section .container .title .sectionTitle{
+    position: relative;
+    font-size:2.2rem;
+    font-weight:600;
+    letter-spacing:5px;
+    text-transform:capitalize;
+    color: #0000ff;
+}
+#portfolio-section .container .title .sectionTitle .text-content{
+    padding: 10px 10px;
+    font-size:1.1rem;
+    color:#393939;
+    font-weight: 100;
+    text-align: left;
+}
+
+
+
+
+
+
+#portfolio-section .container .title .sectionTitle-portfolio{
+    position: relative;
+    font-size:1.7rem;
+    font-weight:500;
+    letter-spacing:3px;
+    text-transform:none;
+    color: #0000ff;
+    margin-top: -3rem;
+}
+#portfolio-section .container .title .sectionTitle-portfolio .text-content-portfolio{
+    padding: 10px 20px;
+    color:orange;
+    font-weight: 300;
+    text-align: left;
+    line-height: 0.9;
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+#portfolio-section li{
+    list-style: square;
+    color:#292929;
+    margin-left: 3rem;
+    font-size: 1.0rem;
+    letter-spacing: 1px;
+    margin-bottom:1rem;
+}
+#portfolio-section .portfolio-container{
+    margin-top:1rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:350px 350px;
+    grid-gap:100px;
+}
+#portfolio-section .portfolio-container .box{
+    background: blue;
+    display:block;
+    padding:10px;
+    margin-bottom: 20px;
+    transition:all .4s ease-in-out;
+    cursor: pointer;
+    width:100%;
+    color:#ffffff;  
+    text-decoration:none;
+    text-transform:none;
+    overflow:hidden;
+}
+#portfolio-section .portfolio-container .box.image .imageHeader p{
+    font-size: 9.9rem;
+    color: orange;
+}    
+#portfolio-section .portfolio-container .box.image .image .imageHeaderTitle{
+    letter-spacing:4px; 
+    font-weight:500; 
+    text-align:center; 
+    font-size:1.3rem;
+}
+/* 6 separate portfolio box locations */
+#portfolio-section .portfolio-container .box.image1{
+    grid-column:1 / 2;
+    grid-row:1 / 2;
+}
+#portfolio-section .portfolio-container .box.image1 .image{
+    background:url("https://cdn.dribbble.com/users/1846841/screenshots/4395558/v-u-l-p-a.gif");
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+#portfolio-section .portfolio-container .box.image2{
+    grid-column:2 / 3;
+    grid-row:1 / 2;
+}
+#portfolio-section .portfolio-container .box.image2 .image{
+    background:url("https://cdn.dribbble.com/users/823181/screenshots/4511085/scenery_illustration.gif");
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+#portfolio-section .portfolio-container .box.image3{
+    grid-column:1 / 2;
+    grid-row:2 / 3;
+}
+#portfolio-section .portfolio-container .box.image3 .image{
+    background:url("https://cdn.dribbble.com/users/257709/screenshots/4695956/singapoure_shot_0_5x.png");
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+#portfolio-section .portfolio-container .box.image4{  
+    grid-column:2 / 3;
+    grid-row:2 / 3
+}
+#portfolio-section .portfolio-container .box.image4 .image{ 
+    background:url("https://cdn.dribbble.com/users/107759/screenshots/3775823/angled-down-3.gif");    
+    /* background:url("https://cdn.dribbble.com/users/22691/screenshots/2191551/open-uri20150812-3-10hs20c"); */
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+#portfolio-section .portfolio-container .box.image5{
+    grid-column:1 / 2;
+    grid-row:3 / 4;
+}
+#portfolio-section .portfolio-container .box.image5 .image{
+    background:url("https://1stwebdesigner.com/wp-content/uploads/2015/10/speedcam.gif"); 
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+#portfolio-section .portfolio-container .box.image6{
+    grid-column:2 / 3;
+    grid-row:3 / 4;
+}
+#portfolio-section .portfolio-container .box.image6 .image{
+    background:url("https://rob.lekensteyn.nl/youtubelyrics/screenshots/40seconds.gif?u");
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+#portfolio-section .portfolio-container .box .image .hover-bg{
+    padding:10px 20px;
+    background:rgb(255,255,255,.0);
+    transition:all .4s ease-in-out;
+}
+#portfolio-section .portfolio-container .box:hover .image .hover-bg{
+    padding:10px 20px;
+    background:rgb(255,255,255,.6);
+}
+#portfolio-section .portfolio-container .box .image .hover-bg .title .text
+{
+    border-radius:5px;
+    padding:10px 20px;
+    transform:translate3d(0, 400px, 0);
+    transition:all .5s ease-in-out;
+    opacity:0;
+}
+#portfolio-section .portfolio-container .box:hover .image .hover-bg .title .text
+{
+    background-color:#0000ff;
+    border-radius:5px;
+    transform:translate3d(0, 0px, 0);
+    opacity:1;
+}
+#portfolio-section .portfolio-container .box:hover .image .hover-bg .title .text .email-description{
+    text-align:left; 
+    font-size:1.0rem; 
+    line-height:1.2; 
+    margin-bottom:2rem;
+}
+/* Tablets */
+@media all and (min-width: 768px) and (max-width: 960px){ 
+    #portfolio-section{
+        padding: 0px 15px;
+        margin: 0rem 0rem; 
+    }   
+    #portfolio-section .portfolio-container{
+        margin-top:1rem;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 320px 320px 320px;
+        grid-gap:20px;
+    }             
+    #portfolio-section .container .title .sectionTitle{
+        position: relative;
+        font-size:2.4rem;
+        font-weight:600;
+        letter-spacing:5px;
+        text-transform:uppercase;
+        color: #0000ff;
+    }
+    #portfolio-section .container .title .sectionTitle-portfolio{
+            position: relative;
+        font-size: 1.2rem;
+        line-height: 1.0;
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-transform: none;
+        color: #0000ff;
+        margin-top: 3rem;
+        margin-bottom: 3.5rem;
+    }
+    #portfolio-section .portfolio-container .box.image1{
+        grid-column:1 / 2;
+        grid-row:1 / 2;
+    }
+    #portfolio-section .portfolio-container .box.image2{
+        grid-column:1 / 2;
+        grid-row:2 / 3;
+    }
+    #portfolio-section .portfolio-container .box.image3{
+        grid-column:1 / 2;
+        grid-row:3 / 4;
+    }
+    #portfolio-section .portfolio-container .box.image4{
+        grid-column:1 / 2;
+        grid-row:4 / 5;
+    }
+    #portfolio-section .portfolio-container .box.image5{
+        grid-column:1 / 2;
+        grid-row:5 / 6;
+    }
+    #portfolio-section .portfolio-container .box.image6{
+        grid-column:1 / 2;
+        grid-row:6 / 7;
+    }
+}
+/* Phones */
+@media all and (max-width: 767px){
+    #portfolio-section{
+        padding: 0px 15px;
+        margin: 0rem 0rem;
+    }   
+    #portfolio-section .portfolio-container{
+        margin-top:1rem;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 320px 320px 320px 320px;
+        grid-gap:20px;
+    }   
+    #portfolio-section .container .title .sectionTitle{
+        position: relative;
+        font-size:2.4rem;
+        font-weight:600;
+        letter-spacing:5px;
+        text-transform:capitalize;
+        color: #0000ff;
+    }    
+    #portfolio-section .container .title .sectionTitle-portfolio{
+            position: relative;
+        font-size: 1.2rem;
+        line-height: 1.0;
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-transform: none;
+        color: #0000ff;
+        margin-top: 3rem;
+        margin-bottom: 3.5rem;
+    }
+    #portfolio-section .portfolio-container .box.image1{
+        grid-column:1 / 2;
+        grid-row:1 / 2;
+    }
+    #portfolio-section .portfolio-container .box.image2{
+        grid-column:1 / 2;
+        grid-row:2 / 3;
+    }
+    #portfolio-section .portfolio-container .box.image3{
+        grid-column:1 / 2;
+        grid-row:3 / 4;
+    }
+    #portfolio-section .portfolio-container .box.image4{
+        grid-column:1 / 2;
+        grid-row:4 / 5;
+    }
+    #portfolio-section .portfolio-container .box.image5{
+        grid-column:1 / 2;
+        grid-row:5 / 6;
+    }
+    #portfolio-section .portfolio-container .box.image6{
+        grid-column:1 / 2;
+        grid-row:6 / 7;
+    }
+}
